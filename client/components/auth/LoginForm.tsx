@@ -56,7 +56,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onSuccess }) => {
             <div className="bg-white/20 p-3 rounded-xl backdrop-blur-sm">
               <MapPin className="w-8 h-8" />
             </div>
-            <h1 className="text-3xl font-bold tracking-tight">AeroVoyage</h1>
+            <h1 className="text-3xl font-bold tracking-tight">JournoAI</h1>
           </div>
           <p className="text-orange-100 text-sm font-medium">
             Your Gateway to Unforgettable Journeys.

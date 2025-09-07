@@ -32,7 +32,7 @@ export default function Hero() {
             Featured • Best Sellers
           </span>
           <h1 className="mt-6 text-3xl font-extrabold leading-tight md:text-5xl">
-            Plan. Book. Explore.
+            Your adventure starts here.
           </h1>
           <p className="mt-4 text-lg text-white/90">
             Seamless bookings, curated experiences, and local experts ready to
@@ -58,8 +58,8 @@ export default function Hero() {
             {[
               "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop",
               "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=800&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1502920917128-1aa500764ce7?q=80&w=800&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=800&auto=format&fit=crop",
+              "/images/thumb1.jpeg",
+              "/images/thumb2.jpeg",
             ].map((src, idx) => (
               <img
                 key={idx}
