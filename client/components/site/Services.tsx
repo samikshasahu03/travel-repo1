@@ -25,26 +25,31 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-background py-16 md:py-24">
+    <section id="services" className="bg-orange-50 py-16 md:py-24">
       <div className="container mx-auto">
-        <div className="mb-10 flex flex-col items-center text-center md:mb-14">
-          <h2 className="text-3xl font-extrabold md:text-4xl">Our Services</h2>
-          <p className="mt-3 max-w-2xl text-muted-foreground">
-            From planning to booking to support on the go—AeroVoyage handles it
-            all.
+        {/* Section Header */}
+        <div className="mb-12 flex flex-col items-center text-center md:mb-16">
+          <h2 className="text-3xl font-extrabold text-gray-800 md:text-4xl">
+            Our Services
+          </h2>
+          <p className="mt-3 max-w-2xl text-gray-600">
+            From planning to booking to support on the go—AeroVoyage handles it all.
           </p>
         </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map(({ title, desc, icon: Icon }) => (
+
+        {/* Service Cards */}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {services.map(({ title, desc, icon: Icon }, idx) => (
             <div
               key={title}
-              className="group rounded-xl border bg-card p-6 shadow-sm transition hover:shadow-lg"
+              className="group rounded-2xl border border-gray-100 bg-white p-6 shadow-md transition-all duration-300 hover:shadow-xl hover:scale-105"
+              style={{ transitionDelay: `${idx * 100}ms` }} // staggered animation effect
             >
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+              <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-tr from-orange-500 to-orange-600 text-white shadow-lg transition-transform duration-300 group-hover:scale-110">
                 <Icon className="h-6 w-6" />
               </div>
-              <h3 className="text-lg font-semibold">{title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{desc}</p>
+              <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+              <p className="mt-2 text-sm text-gray-600">{desc}</p>
             </div>
           ))}
         </div>

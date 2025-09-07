@@ -1,3 +1,5 @@
+
+// DestinationsGrid Component
 import DestinationCard from "./DestinationCard";
 
 const destinations = [
@@ -68,19 +70,25 @@ const destinations = [
 
 export default function DestinationsGrid() {
   return (
-    <section id="destinations" className="bg-background py-16 md:py-24">
+    <section id="destinations" className="bg-orange-50 py-16 md:py-24">
       <div className="container mx-auto">
-        <div className="mb-10 flex flex-col items-center text-center md:mb-14">
-          <h2 className="text-3xl font-extrabold md:text-4xl">
+        <div className="mb-12 flex flex-col items-center text-center md:mb-16">
+          <h2 className="text-3xl font-extrabold text-gray-800 md:text-4xl">
             Featured Destinations
           </h2>
-          <p className="mt-3 max-w-2xl text-muted-foreground">
+          <p className="mt-3 max-w-2xl text-gray-600">
             Handpicked getaways loved by our travelers.
           </p>
         </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {destinations.map((d) => (
-            <DestinationCard key={d.name} {...d} />
+            <DestinationCard
+              key={d.name}
+              image={d.image}
+              title={d.name}
+              duration={d.duration}
+              price={d.price}
+            />
           ))}
         </div>
       </div>

@@ -28,7 +28,7 @@ export default function Hero() {
       <div className="container relative z-10 mx-auto grid gap-8 py-20 md:grid-cols-2 md:items-center">
         {/* Left: Hero copy */}
         <div className="mx-auto max-w-2xl text-white md:mx-0">
-          <span className="inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-sm font-medium text-accent">
+          <span className="inline-flex items-center rounded-full bg-orange-100/20 px-3 py-1 text-sm font-medium text-orange-500">
             Featured • Best Sellers
           </span>
           <h1 className="mt-6 text-3xl font-extrabold leading-tight md:text-5xl">
@@ -42,79 +42,65 @@ export default function Hero() {
           <div className="mt-6 flex flex-wrap gap-3">
             <a
               href="#destinations"
-              className="inline-flex items-center rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow transition hover:opacity-95"
+              className="inline-flex items-center rounded-md bg-gradient-to-r from-orange-500 to-orange-600 px-5 py-3 text-sm font-semibold text-white shadow-lg hover:scale-105 transition transform duration-200"
             >
               Explore Destinations
             </a>
             <a
               href="#services"
-              className="inline-flex items-center rounded-md bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-white/20"
+              className="inline-flex items-center rounded-md bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-white/20 transition duration-200"
             >
               Our Services
             </a>
           </div>
 
           <div className="mt-8 grid grid-cols-3 gap-3 md:grid-cols-4">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop"
-              alt="thumb"
-              className="h-16 w-full rounded object-cover"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=800&auto=format&fit=crop"
-              alt="thumb"
-              className="h-16 w-full rounded object-cover"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1502920917128-1aa500764ce7?q=80&w=800&auto=format&fit=crop"
-              alt="thumb"
-              className="h-16 w-full rounded object-cover hidden md:block"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=800&auto=format&fit=crop"
-              alt="thumb"
-              className="h-16 w-full rounded object-cover hidden md:block"
-            />
+            {[
+              "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop",
+              "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=800&auto=format&fit=crop",
+              "https://images.unsplash.com/photo-1502920917128-1aa500764ce7?q=80&w=800&auto=format&fit=crop",
+              "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=800&auto=format&fit=crop",
+            ].map((src, idx) => (
+              <img
+                key={idx}
+                src={src}
+                alt={`thumb-${idx}`}
+                className="h-16 w-full rounded object-cover transition-transform duration-300 hover:scale-105"
+              />
+            ))}
           </div>
         </div>
 
         {/* Right: Booking form */}
-        <div className="mx-auto w-full max-w-md rounded-2xl bg-card/80 p-6 shadow-xl backdrop-blur">
-          <h3 className="text-lg font-semibold">Search & Book</h3>
-          <p className="mt-1 text-sm text-muted-foreground">
+        <div className="mx-auto w-full max-w-md rounded-2xl bg-white/10 p-6 shadow-xl backdrop-blur-md border border-white/20 transition-transform hover:scale-105 duration-300">
+          <h3 className="text-lg font-semibold text-white">Search & Book</h3>
+          <p className="mt-1 text-sm text-white/70">
             Search packages and request a quote instantly.
           </p>
 
           <form onSubmit={handleSubmit} className="mt-4 grid gap-3">
-            <label className="sr-only">Destination</label>
             <input
               name="destination"
               placeholder="Destination (e.g., Bali)"
-              className="rounded-md border px-3 py-2 text-sm"
+              className="rounded-md border border-white/30 bg-white/10 px-3 py-2 text-sm text-white placeholder-white/50 focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
             />
 
             <div className="grid grid-cols-2 gap-3">
-              <div>
-                <label className="sr-only">Check-in</label>
-                <input
-                  type="date"
-                  name="checkin"
-                  className="w-full rounded-md border px-3 py-2 text-sm"
-                />
-              </div>
-              <div>
-                <label className="sr-only">Check-out</label>
-                <input
-                  type="date"
-                  name="checkout"
-                  className="w-full rounded-md border px-3 py-2 text-sm"
-                />
-              </div>
+              <input
+                type="date"
+                name="checkin"
+                className="w-full rounded-md border border-white/30 bg-white/10 px-3 py-2 text-sm text-white placeholder-white/50 focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+              />
+              <input
+                type="date"
+                name="checkout"
+                className="w-full rounded-md border border-white/30 bg-white/10 px-3 py-2 text-sm text-white placeholder-white/50 focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+              />
             </div>
 
             <select
               name="guests"
-              className="rounded-md border px-3 py-2 text-sm"
+              className="rounded-md border border-white/30 bg-white/10 px-3 py-2 text-sm text-white focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
             >
               <option value="1">1 guest</option>
               <option value="2">2 guests</option>
@@ -125,19 +111,19 @@ export default function Hero() {
             <div className="flex items-center gap-3">
               <button
                 type="submit"
-                className="flex-1 rounded-md bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground hover:opacity-95"
+                className="flex-1 rounded-md bg-gradient-to-r from-orange-500 to-orange-600 px-4 py-2 text-sm font-semibold text-white shadow-lg hover:scale-105 transition-transform duration-200"
               >
                 Request Quote
               </button>
               <a
                 href="#contact"
-                className="inline-flex items-center rounded-md border px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-accent/6"
+                className="inline-flex items-center rounded-md border border-white/30 px-4 py-2 text-sm font-medium text-white hover:bg-orange-500 hover:text-white transition-all duration-200"
               >
                 Contact
               </a>
             </div>
 
-            <div className="mt-2 text-xs text-muted-foreground">
+            <div className="mt-2 text-xs text-white/70">
               Or chat with AeroBot for instant help.
             </div>
           </form>

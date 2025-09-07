@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../hooks/useAuth';
-import { updateUserConsent } from '../../services/Firestore';
+import { updateUserConsent } from '../../services/firestore';
 import { Shield, CheckCircle, AlertTriangle, MapPin, LucideIcon } from 'lucide-react';
 import toast from 'react-hot-toast';
 
@@ -71,8 +71,8 @@ const ConsentForm: React.FC = () => {
               Privacy & Data Usage
             </h2>
             <p className="text-neutral-600 mb-4 leading-relaxed">
-              Welcome to the NATPAC Travel Data Collection System. Your privacy is important to us.
-              Please review and consent to our data collection practices.
+              Welcome to the AeroVoyage Trav Agent.
+              Your privacy is important to us. Please review and provide your consent
             </p>
           </div>
 

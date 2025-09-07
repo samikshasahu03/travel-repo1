@@ -12,7 +12,7 @@ import {
   createOrUpdateUser,
   getUserConsent,
   updateUserConsent,
-} from "../services/firestore";
+} from "../services/firestore"; // ✅ lowercase 'f'
 
 // Define Auth context type
 interface AuthContextType {
@@ -27,6 +27,7 @@ interface AuthContextType {
 
 // Create context
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
+AuthContext.displayName = "AuthContext"; // ✅ helpful for debugging
 
 // Hook to use auth
 export const useAuth = (): AuthContextType => {
@@ -128,8 +129,9 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
         signUpWithEmail,
         logout,
         updateConsent,
-      }}>
-      {!loading && children}
+      }}
+    >
+      {children}
     </AuthContext.Provider>
   );
 };
