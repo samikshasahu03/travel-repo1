@@ -20,7 +20,7 @@ export default function Navbar() {
             <Plane className="h-5 w-5" />
           </span>
           <span className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-            AeroVoyage
+            JournoAI
           </span>
         </a>
 

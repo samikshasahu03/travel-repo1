@@ -90,7 +90,7 @@ export default function Chatbot() {
                 <MessageSquare className="h-5 w-5" />
               </div>
               <div>
-                <div className="text-sm font-semibold">AeroBot</div>
+                <div className="text-sm font-semibold">JournoBot</div>
                 <div className="text-xs text-gray-500">Your travel assistant</div>
               </div>
             </div>
@@ -116,7 +116,7 @@ export default function Chatbot() {
           <div ref={listRef} className="flex-1 space-y-3 overflow-auto px-4 py-3">
             {messages.length === 0 && (
               <div className="text-sm text-gray-500">
-                Hi! I'm AeroBot — ask me about destinations, pricing, or help with bookings.
+                Hi! I'm JournoBot — ask me about destinations, pricing, or help with bookings.
               </div>
             )}
             {messages.map((m) => (
@@ -135,7 +135,7 @@ export default function Chatbot() {
                 </div>
               </div>
             ))}
-            {loading && <div className="text-sm text-gray-500">AeroBot is typing...</div>}
+            {loading && <div className="text-sm text-gray-500">JournoBot is typing...</div>}
           </div>
 
           {/* Input */}
