@@ -32,11 +32,10 @@ export default function Hero() {
             Featured • Best Sellers
           </span>
           <h1 className="mt-6 text-3xl font-extrabold leading-tight md:text-5xl">
-            Plan. Book. Explore.
+            Your adventure starts here.
           </h1>
           <p className="mt-4 text-lg text-white/90">
-            Seamless bookings, curated experiences, and local experts ready to
-            help. Find your next unforgettable trip with AeroVoyage.
+            Discover breathtaking destinations, plan your perfect trip, and make every journey unforgettable. From hidden gems to iconic landmarks,Your next memory is just a click away.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
@@ -56,10 +55,10 @@ export default function Hero() {
 
           <div className="mt-8 grid grid-cols-3 gap-3 md:grid-cols-4">
             {[
-              "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=800&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1502920917128-1aa500764ce7?q=80&w=800&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=800&auto=format&fit=crop",
+              "/images/thumb1.jpeg",
+              "/images/thumb2.jpeg",
+              "/images/thumb3.jpeg",
+              "/images/thumb4.jpeg",
             ].map((src, idx) => (
               <img
                 key={idx}
@@ -124,7 +123,7 @@ export default function Hero() {
             </div>
 
             <div className="mt-2 text-xs text-white/70">
-              Or chat with AeroBot for instant help.
+              Or chat with JournoBot for instant help.
             </div>
           </form>
         </div>

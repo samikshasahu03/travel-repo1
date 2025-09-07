@@ -16,11 +16,13 @@ export default function Navbar() {
       <nav className="container mx-auto flex items-center justify-between py-4 px-4 md:px-0">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2 group">
-          <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg transform transition-transform duration-300 group-hover:scale-110">
-            <Plane className="h-5 w-5" />
-          </span>
+          <img 
+              src="/images/logo.png" 
+              alt="Logo" 
+              className="h-10 w-10 object-contain rounded-lg"
+          />
           <span className="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-            AeroVoyage
+            JournoAI
           </span>
         </a>
 

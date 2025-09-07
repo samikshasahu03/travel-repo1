@@ -1,25 +1,25 @@
-import { Plane, Hotel, MapPin, Headphones } from "lucide-react";
+import { Plane, Hotel, MapPin, Headphones, Star, CalendarCheck, Bell, HotelIcon } from "lucide-react";
 
 const services = [
   {
-    title: "Tailored Packages",
-    desc: "Custom itineraries built around your preferences.",
-    icon: Plane,
+    title: "Flight & Hotel Booking Assistance",
+    desc: "Find and book the best flights, hotels, and accommodations with real-time pricing and deals.",
+    icon: HotelIcon,
   },
   {
-    title: "Best Price Guarantee",
+    title: "Smart Destination Suggestions",
     desc: "Competitive deals and transparent pricing.",
-    icon: Hotel,
+    icon: Star,
   },
   {
-    title: "Expert Guidance",
-    desc: "Local insights and curated recommendations.",
-    icon: MapPin,
+    title: "Activity & Experience Booking",
+    desc: "Discover and reserve local experiences, tours, and activities without the hassle.",
+    icon: CalendarCheck,
   },
   {
-    title: "24/7 Support",
-    desc: "We’re here any time you need us.",
-    icon: Headphones,
+    title: "Real-Time Travel Alerts",
+    desc: "Receive instant notifications about flight delays, weather changes, or travel disruptions.",
+    icon: Bell,
   },
 ];
 
@@ -33,7 +33,7 @@ export default function Services() {
             Our Services
           </h2>
           <p className="mt-3 max-w-2xl text-gray-600">
-            From planning to booking to support on the go—AeroVoyage handles it all.
+            Plan your dream journey in just a few taps. Personalized itineraries, top attractions, and hidden gems included
           </p>
         </div>
 

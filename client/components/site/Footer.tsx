@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
         {/* Branding / Copyright */}
         <p className="text-sm text-gray-600">
-          © {new Date().getFullYear()} <span className="font-semibold text-orange-600">AeroVoyage</span>. All rights reserved.
+          © {new Date().getFullYear()} <span className="font-semibold text-orange-600">JournoAI</span>. All rights reserved.
         </p>
 
         {/* Tagline */}

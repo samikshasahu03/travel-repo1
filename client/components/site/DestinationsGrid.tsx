@@ -29,21 +29,21 @@ const destinations = [
     duration: "4 days",
     price: "$1,499",
     image:
-      "https://images.unsplash.com/photo-1505066836043-7dda5ce6c42a?q=80&w=2070&auto=format&fit=crop",
+      "/images/santorini.jpeg",
   },
   {
     name: "New York, USA",
     duration: "3 days",
     price: "$999",
     image:
-      "https://images.unsplash.com/photo-1468436385273-8abca6dfd8d1?q=80&w=2069&auto=format&fit=crop",
+      "/images/ny.jpeg",
   },
   {
     name: "Cape Town, South Africa",
     duration: "7 days",
     price: "$1,399",
     image:
-      "https://images.unsplash.com/photo-1489450584921-1befb5039923?q=80&w=1953&auto=format&fit=crop",
+      "/images/ct.jpeg",
   },
   {
     name: "Maldives",
@@ -53,18 +53,18 @@ const destinations = [
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2070&auto=format&fit=crop",
   },
   {
-    name: "Reykjavik, Iceland",
+    name: "Istanbul, Turkey",
     duration: "5 days",
     price: "$1,899",
     image:
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2000&auto=format&fit=crop",
+      "/images/istanbul.jpeg",
   },
   {
     name: "Rome, Italy",
     duration: "4 days",
     price: "$1,099",
     image:
-      "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=2000&auto=format&fit=crop",
+      "/images/rome.jpeg",
   },
 ];
 

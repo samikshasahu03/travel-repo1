@@ -75,7 +75,7 @@ export default function Chatbot() {
         className="fixed right-6 bottom-6 z-50 flex items-center gap-2 rounded-full bg-gradient-to-tr from-orange-500 to-orange-600 px-4 py-3 text-sm font-semibold text-white shadow-lg hover:scale-105 transition-transform duration-200"
       >
         <MessageSquare className="h-5 w-5" />
-        <span className="hidden sm:inline">Chat</span>
+        <span className="hidden sm:inline">JournoBot</span>
       </button>
 
       {open && (
@@ -90,7 +90,7 @@ export default function Chatbot() {
                 <MessageSquare className="h-5 w-5" />
               </div>
               <div>
-                <div className="text-sm font-semibold">AeroBot</div>
+                <div className="text-sm font-semibold">JournoBot</div>
                 <div className="text-xs text-gray-500">Your travel assistant</div>
               </div>
             </div>
@@ -116,7 +116,7 @@ export default function Chatbot() {
           <div ref={listRef} className="flex-1 space-y-3 overflow-auto px-4 py-3">
             {messages.length === 0 && (
               <div className="text-sm text-gray-500">
-                Hi! I'm AeroBot — ask me about destinations, pricing, or help with bookings.
+                Hi! I'm JournoBot — ask me about destinations, pricing, or help with bookings.
               </div>
             )}
             {messages.map((m) => (
@@ -135,7 +135,7 @@ export default function Chatbot() {
                 </div>
               </div>
             ))}
-            {loading && <div className="text-sm text-gray-500">AeroBot is typing...</div>}
+            {loading && <div className="text-sm text-gray-500">JournoBot is typing...</div>}
           </div>
 
           {/* Input */}
@@ -151,7 +151,7 @@ export default function Chatbot() {
                   }
                 }}
                 rows={1}
-                placeholder="Type a message... (Enter to send, Shift+Enter for newline)"
+                placeholder="Type a message..."
                 className="h-10 max-h-28 flex-1 resize-none rounded-md border px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-orange-400"
               />
               <button
